@@ -21,7 +21,7 @@ import { JwtModule } from '@nestjs/jwt';
           password: configService.get('mysql_server_password'),
           database: 'meeting_room_booking_system',
           synchronize: true,
-          logging: true,
+          // logging: true, //打印sql
           entities: [User, Role, Permission],
           poolSize: 10,
           connectorPackage: 'mysql2',
