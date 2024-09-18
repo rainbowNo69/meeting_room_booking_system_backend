@@ -122,6 +122,7 @@ export class UserService {
     return vo;
   }
 
+  //初始化数据
   async initData() {
     const user1 = new User();
     user1.username = 'zhangsan';
