@@ -14,11 +14,11 @@ export class FormatResponseInterceptor implements NestInterceptor {
     //抛出的异常还是由内置的 Exception Filter 来处理,不在此被处理
     return next.handle().pipe(
       map((data) => {
-        console.log('111', {
-          code: response.statusCode,
-          message: 'success',
-          data,
-        });
+        // console.log('111', {
+        //   code: response.statusCode,
+        //   message: 'success',
+        //   data,
+        // });
         return {
           code: response.statusCode,
           message: 'success',
